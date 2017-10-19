@@ -1,0 +1,60 @@
+<!--
+  Generated template for the QuestionPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Edit Question</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+ 
+<ion-content>
+
+    <ion-list>
+        <ion-item>
+          <ion-label fixed>Title: </ion-label>
+          <ion-input type="text" [(ngModel)]="q.questionTitle"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label fixed>Antwort 1: </ion-label>
+            <ion-input type="text" [(ngModel)]="q.answer1"></ion-input>
+            <button ion-button clear item-end (click)="setCorrect(1)">
+                <ion-icon name="checkmark"></ion-icon>
+            </button>
+        </ion-item>
+        <ion-item>
+            <ion-label fixed>Antwort 2: </ion-label>
+            <ion-input type="text" [(ngModel)]="q.answer2"></ion-input>
+            <button ion-button clear item-end (click)="setCorrect(2)">
+                    <ion-icon name="checkmark"></ion-icon>
+                </button>
+        </ion-item>
+        <ion-item>
+            <ion-label fixed>Antwort 3: </ion-label>
+            <ion-input type="text" [(ngModel)]="q.answer3"></ion-input>
+            <button ion-button clear item-end (click)="setCorrect(3)">
+                    <ion-icon name="checkmark"></ion-icon>
+                </button>
+        </ion-item>
+        <ion-item>
+            <ion-label fixed>Antwort 4: </ion-label>
+            <ion-input type="text" [(ngModel)]="q.answer4"></ion-input>
+            <button ion-button clear item-end (click)="setCorrect(4)">
+                    <ion-icon name="checkmark"></ion-icon>
+            </button>
+        </ion-item>
+        <ion-item>
+            <ion-label fixed>richtig: </ion-label>
+            <ion-label fixed>{{q.correctAnswer}}</ion-label>
+            <!--<ion-input type="text" [(ngModel)]="q.correctAnswer"></ion-input>-->
+        </ion-item>
+        
+          
+    </ion-list>
+
+</ion-content>

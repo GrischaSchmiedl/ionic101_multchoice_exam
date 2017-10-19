@@ -1,14 +1,16 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      My wonderfull first app
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
   <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
+    Number of questions: {{data.questions.length}} <!--{{count}} {{questions.length}}--> <br>
+    
   </p>
+  <button ion-button round (click)="gotoTestPage()">Test starten</button>
+  <button ion-button round (click)="gotoQuestionListPage()">Fragen bearbeiten</button>
 </ion-content>
