@@ -1,26 +1,7 @@
-This is a starter template for [Ionic](http://ionicframework.com/docs/) projects.
+This is a small tutorial for a 4-hour tutorial lecture in Oct. 2017
 
-## How to use this template
-
-*This template does not work on its own*. The shared files for each starter are found in the [ionic2-app-base repo](https://github.com/ionic-team/ionic2-app-base).
-
-To use this template, either create a new ionic project using the ionic node.js utility, or copy the files from this repository into the [Starter App Base](https://github.com/ionic-team/ionic2-app-base).
-
-### With the Ionic CLI:
-
-Take the name after `ionic2-starter-`, and that is the name of the template to be used when using the `ionic start` command below:
-
-```bash
-$ sudo npm install -g ionic cordova
-$ ionic start myBlank blank
-```
-
-Then, to run it, cd into `myBlank` and run:
-
-```bash
-$ ionic cordova platform add ios
-$ ionic cordova run ios
-```
-
-Substitute ios for android if not on a Mac.
-
+features: 
+  demonstrates MVC in Ionic incl. a data-provider and a class (question) for the actual data
+  used UI-elements: buttons (regular, in list, in header, icon-only), dragable lists, text-boxes)
+  demonstrates bidirection data-binding between text-boxes and data
+  save and load from storage-provider
