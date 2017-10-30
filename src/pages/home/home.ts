@@ -3,7 +3,7 @@ import { NavController } from 'ionic-angular';
 import {TestPage} from '../test/test';
 import {QuestionListPage} from '../question-list/question-list';
 import {DataProvider} from '../../providers/data/data';
-import {Question} from '../../models/question';
+//import {Question} from '../../models/question';
 
 @Component({
   selector: 'page-home',
